@@ -399,6 +399,8 @@ h3 {
 
 .cards {grid-template-columns: 1fr ;}
 
+.marble3 {display: none;}
+
 #cards-container {
         display: flex; 
         flex-direction: column; 
