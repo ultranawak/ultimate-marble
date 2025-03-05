@@ -12,11 +12,58 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<style>
 
+#introduction-participate {
+    padding: 10em 0 5em;
+}
+
+#cards-container {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+    gap: 3em;
+    padding : 5rem 0 7rem;
+            }
+    
+    #card {
+        align-items: center;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 1em 2em 2em;
+    border-radius: 1em;
+flex: 1; /* Ensure all cards have the same width */
+    }
+    
+            #card-top {
+                align-items: center;
+                border-radius: 1em;
+                padding: 1em 1em 0em;
+            }
+
+            #card h2 {
+                color : #E6007E;
+            }
+          
+          #discord { text-decoration: none;
+        color : #303030;}
+
+        #discord:active, #discord:hover { 
+            color : #E6007E;}
+
+#H1-titre {font-size: 2rem;
+line-height: 1em;
+text-align: left;
+padding-bottom : 1em !important;}
+
+#invers {padding-bottom: 8em;}
+
+</style>
+
+<body>
 
     <div id="navigation-bar" class="full-width">
         <nav id="top-nav-bar" class="container">
@@ -35,259 +82,109 @@
     <main>
 
         <div id="introduction-participate" class="intro container">
-
             <div class="intro-text">
-                <p>Bienvenue dans la première édition de la Coupe du Monde d'<strong>Ultimate Marble</strong>, un sport
-                    féroce où
-                    tactique et technicité doivent être conjuguer pour l'emporter sur son adversaire. Une compétition
-                    palpitante où des athlètes venus des quatre coins du globe (ou presque) vont s'affronter dans une
-                    série de 4 épreuves pensées et développées par nos plus grands spécialistes afin de mettre en avant
-                    leurs précisions et tester leur moral.</p>
-
+                <p>Prêt à défier l’élite des snipers de la bille, ces tireurs d’exception venus des quatre coins du monde (ou au moins de Montréal) ? Si l’idée de prouver ton adresse te titille, suis ces trois étapes simples et entre dans la légende.</p>
             </div>
-
         </div>
 
         <div id="normal" class="diviseur full-width">
             <h1>Comment</h1>
         </div>
 
+        
+
+
+
         <section class="full-width">
             <div id="invers" class="diviseur full-width">
                 <h1>Participer</h1>
 
-                <div class="cards">
-
-                    <div class="card">
-                        <div class="card-top">
-                            <h3>Phase N°01</h3>
-                            <h2>Rejoindre le discord</h2>
-                            <p>Tous les participants jouent en même temps les 4 épreuves avec une seule bille afin de
-                                déterminer les 4 meilleurs joueurs qui formeront leur "équipe".</p>
-                        </div>
-                        <div class="card-bottom">
-                            <p>Alpha Beta Gamma</p>
+                <div id="cards-container">
+                    <div id="card">
+                        <div id="card-top">
+                            <h2>Rejoins le discord officiel</h2></div>
+                            <div class="card-main">
+                            <p>Le QG de la compétition, c'est <b><a href="https://discord.gg/XWdBJQuyBM">Discord</a></b> ! Tu y trouveras toutes les infos, pourras échanger avec les autres participants et suivre les annonces en temps réel.</p>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="card-top">
-                            <h3>Phase N°01</h3>
-                            <h2>Payer les frais d'inscription</h2>
-                            <p>Tous les participants jouent en même temps les 4 épreuves avec une seule bille afin de
-                                déterminer les 4 meilleurs joueurs qui formeront leur "équipe".</p>
-                        </div>
-                        <div class="card-bottom">
-                            <p>Alpha Beta Gamma</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-top">
-                            <h3>Phase N°01</h3>
-                            <h2>Transmettre ses informations</h2>
-                            <p>Tous les participants jouent en même temps les 4 épreuves avec une seule bille afin de
-                                déterminer les 4 meilleurs joueurs qui formeront leur "équipe".</p>
-                        </div>
-                        <div class="card-bottom">
-                            <p>Alpha Beta Gamma</p>
-                        </div>
-                    </div>
-                </div>
-
                 
+                    <div id="card">
+                        <div id="card-top">
+                            <h2>Régles les frais d'inscription</h2></div>
+                            <div class="card-main">
+                            <p>Organiser un tel événement, c'est du sérieux ! Ta contribution de 5$ permet de financer le site, le Discord, l'achat des billes et le matériel des défis.</p>
+                        </div>
+                    </div>    
+                    
+                    <div id="card">
+                        <div id="card-top">
+                            <h2>Réserve tes billes</h2></div>
+                            <div class="card-main">
+                            <p>Une fois que tu te seras inscris, tu obtiendras un rang sur Discord qui te permettra de réserver ton pack de billes pour la compétition. </p>
+                        </div>
+                    </div>
+                
+                    </div>
+
+                    <h2><a id="discord" href="https://discord.gg/XWdBJQuyBM">► https://discord.gg/XWdBJQuyBM</a></h2>
+
+            </div>
         </section>
 
         <section id="epreuves" class="games-explain container">
-
             <img class="marble2" src="marble2-removebg-preview.png" alt="marble2">
-
-            <h1>Bonjour</h1>
-
+            
             <div class="games container left">
-
                 <div class="games-img">
-                    <img src="trophy.png" alt="trophy">
+                    <img src="craft.png" alt="trophy">
                 </div>
                 <div class="games-text">
-                    <p>Bienvenue dans la première édition de la Coupe du Monde d'<strong>Ultimate Marble</strong>, un
-                        sport
-                        féroce où
-                        tactique et technicité doivent être conjuguer pour l'emporter sur son adversaire. Une
-                        compétition
-                        palpitante où des athlètes venus des quatre coins du globe (ou presque) vont s'affronter dans
-                        une
-                        série de 4 épreuves pensées et développées par nos plus grands spécialistes afin de mettre en
-                        avant
-                        leurs précisions et tester leur moral.</p>
-
+                    <h1 id="H1-titre">Tu veux contribuer à l'événement ?</h1>
+                    <p>Une compétition de billes de cette envergure, ça ne s'organise pas tout seul ! Si tu as des talents en montage, peinture, dessin, ou que tu veux simplement donner un coup de main, inscris-toi en tant que <strong>Bénévole</strong> sur Discord. Toute aide est la bienvenue !
+                        Si vous avez toujours rêvé de construire des circuits épiques et d'inventer des obstacles diaboliques, c'est le moment de briller !</p>
                 </div>
-
             </div>
 
-            <h1>Au revoir</h1>
-
+            
             <div class="games container right">
-
                 <div class="games-img">
-                    <img src="trophy.png" alt="trophy">
+                    <img src="/img/spectators.png" alt="trophy">
                 </div>
                 <div class="games-text">
-                    <p>Bienvenue dans la première édition de la Coupe du Monde d'<strong>Ultimate Marble</strong>, un
-                        sport
-                        féroce où
-                        tactique et technicité doivent être conjuguer pour l'emporter sur son adversaire. Une
-                        compétition
-                        palpitante où des athlètes venus des quatre coins du globe (ou presque) vont s'affronter dans
-                        une
-                        série de 4 épreuves pensées et développées par nos plus grands spécialistes afin de mettre en
-                        avant
-                        leurs précisions et tester leur moral.</p>
-
+                    <h1 id="H1-titre">Envie d'assister au spectacle ?</h1>
+                    <p>Regarder une course de billes, c'est aussi un vrai plaisir. Pour ceux qui veulent simplement profiter du show, un rôle <strong>Spectateur</strong> est disponible sur Discord. Installez-vous confortablement, ça promet d’être intense !
+                        Nous avons hâte de vous voir sur la ligne de départ ! 🚀</p>
                 </div>
-
             </div>
-
-            <h1>Bonjour</h1>
-
-            <div class="games container left">
-
-                <div class="games-img">
-                    <img src="trophy.png" alt="trophy">
-                </div>
-                <div class="games-text">
-                    <p>Bienvenue dans la première édition de la Coupe du Monde d'<strong>Ultimate Marble</strong>, un
-                        sport
-                        féroce où
-                        tactique et technicité doivent être conjuguer pour l'emporter sur son adversaire. Une
-                        compétition
-                        palpitante où des athlètes venus des quatre coins du globe (ou presque) vont s'affronter dans
-                        une
-                        série de 4 épreuves pensées et développées par nos plus grands spécialistes afin de mettre en
-                        avant
-                        leurs précisions et tester leur moral.</p>
-
-                </div>
-
-            </div>
-
-            <h1>Au revoir</h1>
-
-            <div class="games container right">
-
-                <div class="games-img">
-                    <img src="trophy.png" alt="trophy">
-                </div>
-                <div class="games-text">
-                    <p>Bienvenue dans la première édition de la Coupe du Monde d'<strong>Ultimate Marble</strong>, un
-                        sport
-                        féroce où
-                        tactique et technicité doivent être conjuguer pour l'emporter sur son adversaire. Une
-                        compétition
-                        palpitante où des athlètes venus des quatre coins du globe (ou presque) vont s'affronter dans
-                        une
-                        série de 4 épreuves pensées et développées par nos plus grands spécialistes afin de mettre en
-                        avant
-                        leurs précisions et tester leur moral.</p>
-
-                </div>
-
-            </div>
-
         </section>
-
-
-        <div id="normal" class="diviseur full-width">
-            <h1>Réglement</h1>
-        </div>
-
-
-
-        <section id="reglement-page" class="reglement-page full-width">
-
-            <img class="marble3" src="marble3-removebg-preview.png" alt="marble3">
-
-            <div id="invers2" class="diviseur full-width">
-                <h1>Réglement</h1>
-
-
-                
-
-                <div class="reglement container">
-
-
-
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-
-                    <h3>Article 1</h3>
-                    <p>La World Championship Ultimate Marble 2022 Montréal First Edition est un évènement ayant pour
-                        seul but de passer un bon moment. Tout participant et spectateur s'engage donc à réspecter le
-                        bon mood de l'évènement.</p>
-                </div>
-
-
-
-        </section>
-
 
     </main>
 
-    <script>document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.getElementById("hamburger");
-        const menu = document.getElementById("menu");
-    
-        // Ouvre/ferme le menu au clic sur le bouton hamburger
-        hamburger.addEventListener("click", function () {
-            menu.classList.toggle("open");
-        });
-    
-        // Ferme le menu quand on clique sur un lien
-        document.querySelectorAll(".menu a").forEach(link => {
-            link.addEventListener("click", function () {
-                menu.classList.remove("open");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const menu = document.getElementById("menu");
+
+            // Ouvre/ferme le menu au clic sur le bouton hamburger
+            hamburger.addEventListener("click", function () {
+                menu.classList.toggle("open");
+            });
+
+            // Ferme le menu quand on clique sur un lien
+            document.querySelectorAll(".menu a").forEach(link => {
+                link.addEventListener("click", function () {
+                    menu.classList.remove("open");
+                });
+            });
+
+            // Ferme le menu si on clique en dehors
+            document.addEventListener("click", function (event) {
+                if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                    menu.classList.remove("open");
+                }
             });
         });
-    
-        // Ferme le menu si on clique en dehors
-        document.addEventListener("click", function (event) {
-            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-                menu.classList.remove("open");
-            }
-        });
-    });
-    
-    
     </script>
-
 
 </body>
 
