@@ -26,7 +26,7 @@ body {
 
 .container {
     max-width: 1410px;
-    padding: 0 20px;
+    padding: 0 min(1em, 8%);
     margin: 0 auto;
 }
 
@@ -55,7 +55,7 @@ nav a {
 
 
 #participe {
-    padding: 0.5em 2em;
+    padding: 0.5em min(2em, 8%);
     background-color: #E6007E;
     border-radius: 2em;
     color: white;
@@ -135,7 +135,7 @@ header {
 }
 
 .intro-text p {
-    font-size: 1.2em;
+    font-size: min(1.2em, 8%);
     line-height: 2em;
     text-align: justify;
 }
@@ -202,7 +202,7 @@ header {
     gap: 3em;
     margin: auto;
     max-width: 1000px;
-    padding: 2em;
+    padding: min(2em, 8%);
     padding-top: 5rem;
     padding-bottom: 10rem;
 
@@ -222,7 +222,7 @@ header {
 .card-top {
     background: white;
     border-radius: 2em;
-    padding: 2em 2em 2em;
+    padding: min(2em, 8%);
 }
 
 
@@ -317,7 +317,7 @@ h3 {
 }
 
 .games-text p {
-    font-size: 1.2em;
+    font-size: min(1.2em, 8%);
     line-height: 2em;
     text-align: justify;
 }
@@ -398,7 +398,7 @@ h3 {
 
 .cards {grid-template-columns: 1fr ;}
 
-#cards-container {display: flex; flex-direction: column; align-items: center; gap: 2em; padding: 8em 2em;} 
+#cards-container {display: flex; flex-direction: column; align-items: center; gap: 2em; padding: 8em min(2em, 8%);} 
 
 .left, .right  {border: none;}
 
@@ -435,7 +435,6 @@ h3 {
 
     .intro-text {
         width: 100%;
-        padding: 2em;
     }
 
     .cards {
@@ -448,7 +447,6 @@ h3 {
 
     .games-text {
         width: 100%;
-        padding: 2em;
     }
 }
 
@@ -509,7 +507,6 @@ h3 {
     z-index: 3;}
 
     #participe {
-        padding: 1em;
         background-color: white;
         border-radius: 2em;
         color: #E6007E;
