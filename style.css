@@ -135,7 +135,7 @@ header {
 }
 
 .intro-text p {
-    font-size: min(1.2em, 8%);
+    font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
 }
@@ -317,7 +317,7 @@ h3 {
 }
 
 .games-text p {
-    font-size: min(1.2em, 8%);
+    font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
 }
