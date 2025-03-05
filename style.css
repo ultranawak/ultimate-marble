@@ -55,7 +55,7 @@ nav a {
 
 
 #participe {
-    padding: 0.5em min(2em, 8%);
+    padding: 0.5em 2em;
     background-color: #E6007E;
     border-radius: 2em;
     color: white;
@@ -434,6 +434,14 @@ h3 {
         display: none;
     }
 
+    .games {
+        flex-direction: column-reverse;
+    }
+
+    .games-text {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 860px) {
@@ -449,13 +457,7 @@ h3 {
         flex-direction: column;
     }
 
-    .games {
-        flex-direction: column-reverse;
-    }
 
-    .games-text {
-        width: 100%;
-    }
 }
 
 
