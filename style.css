@@ -12,6 +12,8 @@ body {
     color: #303030;
 }
 
+.navigation-bar {position: sticky;}
+
 .full-width {
     width: 100%;
     background-color: #f4f4f4;
