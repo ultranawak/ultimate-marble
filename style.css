@@ -400,12 +400,13 @@ h3 {
 
 
     .text h1 {max-width: 620px;}
+
     header {
         text-align: center;
         background-image: url(/img/header-marble-mobile.png);
         background-size: cover;
         background-position: center;
-        padding-top: 15rem;
+
     }
 
     .btn {
@@ -415,6 +416,7 @@ h3 {
     .text {
         margin: auto;
         max-width: 100%;
+        padding-top : 15rem;
     }
 
     .header-img {
