@@ -132,6 +132,7 @@ header {
 
 .intro-text {
     width: 60%;
+    padding: min(2em, 8%);
 }
 
 .intro-text p {
@@ -398,7 +399,12 @@ h3 {
 
 .cards {grid-template-columns: 1fr ;}
 
-#cards-container {display: flex; flex-direction: column; align-items: center; gap: 2em; padding: 8em min(2em, 8%);} 
+#cards-container {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 2em; 
+        padding: 8em min(2em, 8%);} 
 
 .left, .right  {border: none;}
 
