@@ -12,7 +12,7 @@ body {
     color: #303030;
 }
 
-.navigation-bar {
+#navigation-bar {
     position: sticky;
   top: 0;
   z-index: 3;
