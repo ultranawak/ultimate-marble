@@ -176,6 +176,8 @@ header {
 
 }
 
+
+
 #invers {
     background: url('/img/marble1-removebg-preview.png') no-repeat 79% center fixed;
     background-size: auto 30%;
@@ -188,6 +190,11 @@ header {
     transform: scaleY(-1);
     color: white;
 }
+
+#epreuves h1 {
+    font-size : clamp( 1.8rem, 10vw, 5rem);
+}
+
 
 .cards {
     display: grid;
@@ -388,6 +395,8 @@ h3 {
 
 
 @media only screen and (max-width: 1160px) {
+
+.cards {grid-template-columns: 1fr ;}
 
 
     .text h1 {max-width: 620px;}
