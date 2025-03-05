@@ -396,6 +396,7 @@ h3 {
         background-image: url(/img/header-marble-mobile.png);
         background-size: cover;
         background-position: center;
+        padding-top: 15rem;
     }
 
     .btn {
