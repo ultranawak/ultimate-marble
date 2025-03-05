@@ -17,15 +17,6 @@ body {
     background-color: #f4f4f4;
 }
 
-#navigation-bar {
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-
-
 .container {
     max-width: 1410px;
     padding: 0 20px;
@@ -64,12 +55,12 @@ nav a {
 }
 
 header {
-    padding-top : 30em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 55vh;
+    height: clamp(55vh, 3rem);
 }
+
 
 .text {
     max-width: 30%;
@@ -85,6 +76,7 @@ header {
 
 .text p {
     font-size: 2rem;
+    line-height: 1.1em;
     margin: 20px 0;
 }
 
@@ -178,7 +170,7 @@ header {
 }
 
 #invers {
-    background: url('marble1-removebg-preview.png') no-repeat 79% center fixed;
+    background: url('/img/marble1-removebg-preview.png') no-repeat 79% center fixed;
     background-size: auto 30%;
     position: relative;
     z-index: 1;
@@ -191,39 +183,37 @@ header {
 }
 
 .cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 3em;
     margin: auto;
     max-width: 1000px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
     padding: 2em;
     padding-top: 5rem;
     padding-bottom: 10rem;
+
 }
 
 .card {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Ensure content is spaced evenly */
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: 2em;
+    background-color: white; /* Ensure background color is white */
+    height: 100%; /* Ensure all cards have the same height */
 }
 
 .card-top {
     background: white;
-    border-radius: 2em 2em 0 0;
+    border-radius: 2em;
     padding: 2em 2em 2em;
 }
 
-.card-bottom {
-    color: white;
-    background: #E6007E;
-    border-radius: 0 0 2em 2em;
-    padding: 2em;
-    text-align: center;
-}
+
+
+
 
 h2 {
     color: #303030;
@@ -238,8 +228,43 @@ h3 {
 }
 
 
-#introduction-participate {padding : 15em 0;}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 
+.time h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.timebox{
+    display: flex;
+    gap: 1em;
+    margin : auto;
+    max-width: 500px;
+    padding-bottom: 5rem;
+}
+
+.time{
+    text-align: center;
+    margin : auto;
+}
+
+.time h2{
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: 0.5em;
+}
 
 .games-explain {
     padding-top: 10em;
@@ -260,7 +285,7 @@ h3 {
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    margin: 0em auto 14em;
+    margin: 0em auto 8em;
     gap: 3em;
 }
 
@@ -337,6 +362,7 @@ h3 {
 
 .reglement {
     margin-top: 7em;
+    padding-bottom : 5em;
 }
 
 .reglement h3 {
@@ -353,10 +379,59 @@ h3 {
     color: white;
 }
 
-#invers3 h1 {
-    transform: scaleY(-1);
-    color: #f4f4f4;
+
+@media only screen and (max-width: 1160px) {
+
+
+    .text h1 {max-width: 620px;}
+    header {
+        text-align: center;
+        background-image: url(/img/header-marble-mobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .text {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .header-img {
+        display: none;
+    }
+
 }
+
+@media only screen and (max-width: 860px) {
+    .intro-img {
+        display: none;
+    }
+
+    .intro-text {
+        width: 100%;
+        padding: 2em;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .games {
+        flex-direction: column-reverse;
+    }
+
+    .games-text {
+        width: 100%;
+        padding: 2em;
+    }
+}
+
+
+
 
 /* Bouton hamburger caché par défaut */
 .hamburger {
@@ -373,52 +448,22 @@ h3 {
     font-size: 3rem;
     background: none;
     border: none;
-    color: #303030;
+    color:#303030;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1160px) {
-
-
-    .text h1 {
-        max-width: 620px;
-    }
-
-    header {
-        text-align: center;
-        background-image: url(header-marble-mobile.png);
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-    }
-
-    .btn {
-        display: none;
-    }
-
-    .text {
-        margin: auto;
-        max-width: 100%;
-        padding-top : 10em;
-    }
-
-    .header-img {
-        display: none;
-    }
-
+/* Responsive : passage en mode hamburger sous 1160px */
+@media (max-width: 1160px) {
     .hamburger {
-        display: block;
-        /* Afficher le bouton hamburger */
+        display: block; /* Afficher le bouton hamburger */
     }
 
     #hamburger {
-        display: block;
-        /* Afficher le bouton hamburger */
+        display: block; /* Afficher le bouton hamburger */
     }
 
     .menu {
-        display: none;
-        /* Cacher le menu par défaut */
+        display: none; /* Cacher le menu par défaut */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -429,19 +474,17 @@ h3 {
         margin: auto;
         background: white;
         text-align: center;
-        padding: 3em;
+        padding : 3em;
     }
 
-    .menu a {
-        padding: 1em;
-    }
+    .menu a {padding : 1em;}
 
     .menu.open {
-        display: flex;
-        /* Afficher le menu quand on clique */
+        display: flex; /* Afficher le menu quand on clique */
     }
 
-  
+    #navigation-bar {position:fixed;
+    z-index: 3;}
 
     #participe {
         padding: 1em;
@@ -458,94 +501,3 @@ h3 {
         font-weight: 550;
     }
 }
-
-
-@media only screen and (max-width: 860px) {
-
-    #top-nav-bar {    padding-top: 2em;
-        padding-bottom: 2em;}
-
-.logo { font-size:2em;}
-
-    .left,
-    .right {
-
-        border-width: 10px;
-    }
-
-
-    .games-explain h1 {
-        font-size: 3rem;
-    }
-
-    .text h1 {
-        font-size: 3rem;
-    }
-
-    .text p {
-        font-size: 1.5rem;
-    }
-
-    .intro-img {
-        display: none;
-    }
-
-    .intro-text {
-        width: 100%;
-        padding: 2em;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-    .games {
-        flex-direction: column-reverse;
-    }
-
-    .games-text {
-        width: 100%;
-        padding: 2em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-
-    .logo { font-size:2em;}
-
-    .games-explain h1 {
-        font-size: 1rem;
-    }
-
-    .text h1 {
-        font-size: 3rem;
-    }
-
-    .text p {
-        font-size: 1.5rem;
-    }
-
-    .intro-img {
-        display: none;
-    }
-
-    .intro-text {
-        width: 100%;
-        padding: 2em;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-    .games {
-        flex-direction: column-reverse;
-    }
-
-    .games-text {
-        width: 100%;
-        padding: 2em;
-    }
-}
-
-
